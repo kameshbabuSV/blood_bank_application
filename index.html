@@ -1,0 +1,122 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/signupsignin.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+    <title>Sign Up</title>
+<body>
+  <div class="container">
+  
+    <div class="title">Registration</div>
+    <div class="content">
+    <form action="registration.php" method="post">
+      <div class="user-details">
+          <div class="input-box">
+            <span class="details">NAME</span>
+            <input type="text" name="name" placeholder="Enter your name" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">USERNAME</span>
+            <input type="text" name="username" placeholder="Enter your username" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">EMAIL</span>
+            <input type="text" name="email" placeholder="Enter your email" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">PHONE NUMBER</span>
+            <input type="text" name="phonenumber" placeholder="Enter your number" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">PASSWORD</span>
+            <input type="text" name="password" placeholder="Enter your password" required  autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">DISTRICT</span>
+            <input type="text" name="district" placeholder="Enter your district" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+          <div class="input-box">
+            <span class="details">KEYWORD(IN TEXT)</span>
+            <input type="text" name="keyword" placeholder="Use this to change password" required autocomplete="off" onfocus="document.getElementById('message').style.display='none';">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="male" id="male">
+          <input type="radio" name="gender" value="female" id="female">
+          <input type="radio" name="gender" value="other" id="other">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="male">
+            <span class="dot one"></span>
+            <span class="gender">MALE</span>
+          </label>
+          <label for="female">
+            <span class="dot two"></span>
+            <span class="gender">FEMALE</span>
+          </label>
+          <label for="other">
+            <span class="dot three"></span>
+            <span class="gender">OTHER</span>
+            </label>
+          </div>
+        </div>
+           <div class="bloodgroup-details">
+          <input type="radio" name="bloodgroup" value="A+" id="a_plus">
+          <input type="radio" name="bloodgroup" value="B+" id="b_plus">
+          <input type="radio" name="bloodgroup" value="O+" id="o_plus">
+          <input type="radio" name="bloodgroup" value="AB+" id="ab_plus">
+          <input type="radio" name="bloodgroup" value="A-" id="a_minus">
+          <input type="radio" name="bloodgroup" value="B-" id="b_minus">
+          <input type="radio" name="bloodgroup" value="O-" id="o_minus">
+          <input type="radio" name="bloodgroup" value="AB-" id="ab_minus">
+          <span class="bloodgroup-title">BLOOD GROUP</span>
+          <div class="category">
+          <label for="a_plus">
+            <span class="dot aplus"></span>
+            <span class="gender">A+</span>
+          </label>
+          <label for="b_plus">
+            <span class="dot bplus"></span>
+            <span class="gender">B+</span>
+          </label>
+          <label for="o_plus">
+            <span class="dot oplus"></span>
+            <span class="gender">O+</span>
+          </label>
+          <label for="ab_plus">
+            <span class="dot abplus"></span>
+            <span class="gender">AB+</span>
+          </label>
+          <label for="a_minus">
+            <span class="dot aminus"></span>
+            <span class="gender">A-</span>
+          </label>
+          <label for="b_minus">
+            <span class="dot bminus"></span>
+            <span class="gender">B-</span>
+          </label>
+          <label for="o_minus">
+            <span class="dot ominus"></span>
+            <span class="gender">O-</span>
+          </label>
+          <label for="ab_minus">
+            <span class="dot abminus"></span>
+            <span class="gender">AB-</span>
+          </label>
+              
+          </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+          
+          <div class="login_link">
+                Already Have a Account?<a href="signin.php">Login</a>
+            </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
